@@ -15,13 +15,10 @@ eventHub.addEventListener('crimeChosen', event => {
 
         const allCriminals = useCriminals();
         const matchingCriminals = allCriminals.filter(criminal => {
-            //console.log(crimeObj.name);
-            //console.log(criminal.conviction)
             return crimeObj.name === criminal.conviction
         })
         console.log(matchingCriminals)
 
-        //render thingy
         render(matchingCriminals);
 
     }
