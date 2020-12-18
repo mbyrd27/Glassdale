@@ -1,0 +1,7 @@
+.filters {
+    display: flex;
+}
+
+.filter {
+    margin: 1rem;
+}
