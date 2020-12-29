@@ -9,15 +9,15 @@
     },
     {
       "title": "Test2",
-      "author": "Test2",
-      "content": "Test2",
+      "author": "Jimbo",
+      "content": "How does I use this thang?",
       "timestamp": 1609258498422,
       "id": 2
     },
     {
       "title": "Test2",
-      "author": "My name ",
-      "content": "note text",
+      "author": "My name",
+      "content": "some note text",
       "timestamp": 1609258549346,
       "id": 3
     }

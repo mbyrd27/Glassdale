@@ -1,6 +1,7 @@
 @import "./criminals.css";
 @import "./officers.css";
 @import "./noteform.css";
+@import "./notes.css";
 
 body,
 button,
@@ -21,4 +22,8 @@ h1,h2,h3,h4,h5,h6 {
 main {
     max-width: 80%;
     margin: auto;
+}
+
+.lists {
+    display: flex;
 }
