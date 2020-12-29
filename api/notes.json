@@ -1,0 +1,25 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Test",
+      "timestamp": "12/22/2020",
+      "author": "Matt",
+      "content": "This is a test note to see if this works."
+    },
+    {
+      "title": "Test2",
+      "author": "Test2",
+      "content": "Test2",
+      "timestamp": 1609258498422,
+      "id": 2
+    },
+    {
+      "title": "Test2",
+      "author": "My name ",
+      "content": "note text",
+      "timestamp": 1609258549346,
+      "id": 3
+    }
+  ]
+}

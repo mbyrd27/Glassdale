@@ -1,0 +1,21 @@
+.noteFormContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.noteForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+#saveNote {
+    width: 10%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+input {
+    margin: 0.5em;
+}
