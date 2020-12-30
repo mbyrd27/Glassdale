@@ -1,11 +1,6 @@
 .noteFormContainer {
     display: flex;
     flex-direction: column;
-}
-
-.noteForm {
-    display: flex;
-    flex-direction: column;
     width: 50%;
     margin: auto;
 }

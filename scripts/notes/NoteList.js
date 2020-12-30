@@ -4,11 +4,20 @@ import { getNotes, useNotes } from './NoteProvider.js'
 const contentTarget = document.querySelector('.noteListContainer')
 const eventHub = document.querySelector('.container')
 
-eventHub.addEventListener('showNotesClicked', clickEvent => {
+const render = notes => {
+    contentTarget.innerHTML = notes.map(note => Note(note)).join('');
+}
+
+const NoteList = () => {
     getNotes()
         .then(() => {
-            const noteList = useNotes();
-            contentTarget.innerHTML += noteList.map(currentNote => Note(currentNote)).join('');
-        })
-})
+            const allNotes = useNotes();
+            render(allNotes);
+        });
+}
+
+eventHub.addEventListener('showNotesClicked', NoteList);
+eventHub.addEventListener('noteStateChanged', NoteList);
+        
+
 

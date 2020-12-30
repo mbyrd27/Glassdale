@@ -6,20 +6,7 @@
       "timestamp": "12/22/2020",
       "author": "Matt",
       "content": "This is a test note to see if this works."
-    },
-    {
-      "title": "Test2",
-      "author": "Jimbo",
-      "content": "How does I use this thang?",
-      "timestamp": 1609258498422,
-      "id": 2
-    },
-    {
-      "title": "Test2",
-      "author": "My name",
-      "content": "some note text",
-      "timestamp": 1609258549346,
-      "id": 3
     }
+    
   ]
 }
