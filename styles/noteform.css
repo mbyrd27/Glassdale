@@ -1,16 +1,22 @@
 .noteFormContainer {
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    flex-wrap: wrap;
+    width: 40%;
     margin: auto;
 }
 
 #saveNote, #showNotes {
-    width: 10%;
-    margin: auto;
-    margin-top: 1em;
+    margin: 0.25rem auto;
 }
 
 input {
-    margin: 0.5em;
+    width: 90%;
+    margin: 0.25rem auto;
+    color: grey;
+}
+
+textarea {
+    width: 90%;
+    margin: 0.25rem auto;
+    color: grey;
 }

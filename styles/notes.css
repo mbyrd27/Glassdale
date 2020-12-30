@@ -6,4 +6,5 @@
 .note {
     border: 1px dotted green;
     margin: 1rem;
+    padding: 1rem;
 }
