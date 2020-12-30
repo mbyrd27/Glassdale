@@ -16,7 +16,7 @@ eventHub.addEventListener('click', (event) => {
             content: noteContent.value,
             timestamp: Date.now()
         }
-        debugger
+        
 
         saveNote(newNote);
     }

@@ -1,6 +1,7 @@
 .criminalsContainer {
     display: flex;
     flex-wrap: wrap;
+    flex: 3;
 }
 
 .criminals {

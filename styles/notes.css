@@ -1,0 +1,9 @@
+.noteListContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.note {
+    border: 1px dotted green;
+    margin: 1rem;
+}
