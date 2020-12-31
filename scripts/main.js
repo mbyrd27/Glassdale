@@ -5,6 +5,8 @@ import { NoteForm } from './notes/NoteForm.js';
 import { ShowNoteButton } from './notes/ShowNotes.js';
 import './notes/NoteList.js'
 import './associates/AssociateSelect.js'
+import { WitnessButton } from './witnesses/WitnessButton.js';
+import './witnesses/WitnessList.js'
 
 NoteForm();
 
@@ -15,3 +17,5 @@ ConvictionSelect();
 OfficerSelect();
 
 ShowNoteButton();
+
+WitnessButton();
