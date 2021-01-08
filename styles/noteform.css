@@ -9,7 +9,7 @@
     margin: 0.25rem auto;
 }
 
-input {
+input, select {
     width: 90%;
     margin: 0.25rem auto;
     color: grey;

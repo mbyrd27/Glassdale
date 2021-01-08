@@ -1,11 +1,32 @@
 {
   "notes": [
     {
-      "id": 1,
-      "title": "Test",
-      "timestamp": "12/22/2020",
-      "author": "Matt",
-      "content": "This is a test note to see if this works."
+      "author": "Matt Byrd",
+      "content": "Rogelio's parole report indicated a full recovery and he is active in the community.",
+      "timestamp": 1610079711988,
+      "criminalId": 2,
+      "id": 1
+    },
+    {
+      "author": "Jen Buckhalter",
+      "content": "Ressie has been in and out of the criminal system, but I can't track a motive for an extortion crime.",
+      "timestamp": 1610079773872,
+      "criminalId": 18,
+      "id": 2
+    },
+    {
+      "author": "Dave McGuiness",
+      "content": "Bud has been dealing with alcohol issues after his release and could not have pulled off a crime this sophisticated in his drunken state.",
+      "timestamp": 1610079834880,
+      "criminalId": 74,
+      "id": 3
+    },
+    {
+      "author": "Bob Charleston",
+      "content": "Loy has moved out of the country.",
+      "timestamp": 1610080746228,
+      "criminalId": 21,
+      "id": 4
     }
   ]
 }
