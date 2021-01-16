@@ -1,6 +1,9 @@
 import { getCriminals, useCriminals } from './CriminalProvider.js'
 import { Convict } from './Criminal.js'
-import { Associate } from '../associates/Associate.js';
+import { Associate } from '../associates/Associate.js'
+import { getCriminalFacilities, useCriminalFacilities } from '../facilities/CriminalFacilityProvider.js'
+import { getFacilities, useFacilities } from '../facilities/FacilityProvider.js'
+
 
 const eventHub = document.querySelector('.container');
 const contentTarget = document.querySelector('.criminalsContainer');
@@ -39,13 +42,19 @@ eventHub.addEventListener('officerSelected', event => {
     render(matchingCriminals);
 });
 
-const render = criminalCollection => {
-    contentTarget.innerHTML = ''
-    criminalCollection.forEach(criminal => {
-        contentTarget.innerHTML += Convict(criminal);
-    });
-}
+const render = (criminalCollection, allFacilities, relationships) => {
+    contentTarget.innerHTML = criminalCollection.map(criminalObject => {
+        const facRelationship = relationships.filter(rel => rel.criminalId === criminalObject.id)
 
+        const facilities = facRelationship.map(facRel => {
+            const matchingFacility = allFacilities.find(fac => fac.id === facRel.facilityId)
+            return matchingFacility
+        })
+        return Convict(criminalObject, facilities)
+    })
+};
+
+/* OLD
 export const CriminalList = () => {
     getCriminals().then(() => {
         const criminalArray = useCriminals();
@@ -53,4 +62,19 @@ export const CriminalList = () => {
         render(criminalArray);
     });
 }
-    
+*/
+
+
+export const CriminalList = () => {
+    getCriminals()
+        .then(getCriminalFacilities)
+        .then(getFacilities)
+        .then(() => {
+            const facilities = useFacilities()
+            const crimFac = useCriminalFacilities()
+            const criminals = useCriminals()
+
+            render(criminals, facilities, crimFac)
+        })
+}
+
