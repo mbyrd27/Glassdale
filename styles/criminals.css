@@ -1,10 +1,10 @@
 .criminalsContainer {
     display: flex;
     flex-wrap: wrap;
-    flex: 3;
+    width: 70%;
 }
 
-.criminals {
+.criminals, .facilities {
     border: 1px dotted black;
     padding: 1rem;
     margin: 1.5rem;

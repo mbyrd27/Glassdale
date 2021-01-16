@@ -20,11 +20,11 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 2px;
 }
 
-main {
+/*main {
     max-width: 80%;
     margin: auto;
 }
-
+*/
 .lists {
     display: flex;
 }
