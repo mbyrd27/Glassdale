@@ -2,6 +2,7 @@ import { saveNote } from "./NoteProvider.js";
 import { getCriminals, useCriminals } from '../criminals/CriminalProvider.js'
 import { ShowNoteButton } from "./ShowNotes.js";
 import { WitnessButton } from "../witnesses/WitnessButton.js";
+import { FacilitiesButton } from "../facilities/DisplayFacilitiesButton.js";
 
 const contentTarget = document.querySelector('.noteFormContainer')
 const eventHub = document.querySelector('.container')
@@ -14,8 +15,6 @@ eventHub.addEventListener('click', (event) => {
         const dropdownSelector = document.getElementById('note--criminal')
         const criminalIdentifier = parseInt(dropdownSelector[dropdownSelector.selectedIndex].value)
             
-
-
         const newNote = {
             author: noteAuthor.value,
             content: noteContent.value,
@@ -23,7 +22,6 @@ eventHub.addEventListener('click', (event) => {
             criminalId: criminalIdentifier
         }
         
-
         saveNote(newNote);
         
     }
@@ -52,6 +50,7 @@ export const NoteForm = () => {
             render(criminalList);
             ShowNoteButton();
             WitnessButton();
+            FacilitiesButton();
         })
         
 }

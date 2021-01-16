@@ -54,17 +54,6 @@ const render = (criminalCollection, allFacilities, relationships) => {
     }).join('')
 };
 
-/* OLD
-export const CriminalList = () => {
-    getCriminals().then(() => {
-        const criminalArray = useCriminals();
-        console.log(criminalArray);
-        render(criminalArray);
-    });
-}
-*/
-
-
 export const CriminalList = () => {
     getCriminals()
         .then(getCriminalFacilities)

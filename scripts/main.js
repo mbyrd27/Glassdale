@@ -5,6 +5,7 @@ import { NoteForm } from './notes/NoteForm.js';
 import './notes/NoteList.js'
 import './associates/AssociateSelect.js'
 import './witnesses/WitnessList.js'
+import './facilities/FacilityList.js'
 
 NoteForm();
 

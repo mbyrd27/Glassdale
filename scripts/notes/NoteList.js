@@ -9,7 +9,7 @@ const render = (noteList, criminalList) => {
     contentTarget.innerHTML = noteList.map(note => {
         const matchingCriminal = criminalList.find(criminal => criminal.id === note.criminalId)
         return Note(note, matchingCriminal);
-    })
+    }).join('')
 }
 
 const NoteList = () => {
