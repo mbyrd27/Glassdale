@@ -51,7 +51,7 @@ const render = (criminalCollection, allFacilities, relationships) => {
             return matchingFacility
         })
         return Convict(criminalObject, facilities)
-    })
+    }).join('')
 };
 
 /* OLD
